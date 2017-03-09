@@ -47,6 +47,16 @@ body {
     opacity: .7;
   }
 
+  .nameedit
+  {
+     border-style:none;
+  }
+  .nameedit:hover{
+    cursor: text;
+    border-color: #cccccc;
+    border-style: solid;
+  }
+
   .btn {
     box-sizing: border-box;
   }
@@ -2067,14 +2077,4 @@ body {
     position: fixed !important;
     margin-left: 23%;
     margin-top: 18%;
-}
-.nameedit
-{
-   border-style:none;
-}
-.nameedit:hover{
-  cursor: text;
-  border-color:#cccccc;
-  border-style:solid;
-  boder-width:thin;
 }
