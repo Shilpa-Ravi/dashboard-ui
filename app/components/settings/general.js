@@ -57,19 +57,19 @@ class General extends React.Component {
     render() {
 
         return (
-            <div className="contentsubdiv">
+            <div className="contentsubdiv" style={{fontFamily: 'Signika'}}>
                 <div style={{width: '100%'}} className="solo-horizontal-center">
-                    <span style={{color: '#169CEE', fontSize: 24, fontWeight: 700, fontFamily: 'Signika'}}>General Settings</span>
+                    <span style={{color: '#169CEE', fontSize: 24, fontWeight: 700}}>General Settings</span>
                 </div>
                 <div className="push-box" style={{marginTop: 15}}>
                     
                     <div style={{width: '100%', height: 100, backgroundColor: '#F7F7F7', borderBottom: '1px solid #C4C2C2'}}>
                         <div style={{width: '100%', height: '100%'}} className="flex-general-row-wrapper">
                         <div style={{width: '40%', height: '100%', padding: 35}}>
-                            <span style={{color: '#353446', fontSize: 16, fontWeight: 700, fontFamily: 'Signika'}}>App Name</span>
-                            <span className="smallp" style={{fontFamily: 'Signika'}}>The name of your app</span>
+                            <span style={{color: '#353446', fontSize: 16, fontWeight: 700}}>App Name</span>
+                            <span className="smallp">The name of your app</span>
                         </div>
-                        <div className="solo-vertical-center" style={{width: '60%', height: '100%', backgroundColor: 'white', padding: 10, fontFamily: 'Signika'}}>
+                        <div className="solo-vertical-center" style={{width: '60%', height: '100%', backgroundColor: 'white', padding: 10}}>
                             <input type="text" value={ this.state.appName || '' } onChange={ this.textChangeHandler.bind(this,'appName') } className="emailinputcampaign" placeholder="Enter App Name" style={{width: '100%', height: 40, fontSize: 16, paddingLeft: 4}} />
                         </div>
                         </div>
@@ -78,10 +78,10 @@ class General extends React.Component {
                     <div style={{width: '100%', height: 100, backgroundColor: '#F7F7F7', borderBottom: '1px solid #C4C2C2'}}>
                         <div style={{width: '100%', height: '100%'}} className="flex-general-row-wrapper">
                         <div style={{width: '40%', height: '100%', padding: 35}}>
-                            <span style={{color: '#353446', fontSize: 16, fontWeight: 700, fontFamily: 'Signika'}}>App Icon</span>
-                            <span className="smallp" style={{fontFamily: 'Signika'}}>Your app icon</span>
+                            <span style={{color: '#353446', fontSize: 16, fontWeight: 700}}>App Icon</span>
+                            <span className="smallp">Your app icon</span>
                         </div>
-                        <div className="solo-vertical-center" style={{width: '60%', height: '100%', backgroundColor: 'white', padding: 10, fontFamily: 'Signika'}}>
+                        <div className="solo-vertical-center" style={{width: '60%', height: '100%', backgroundColor: 'white', padding: 10}}>
                             <img src={ this.state.appIcon ? this.state.appIcon : '' } className={ this.state.appIcon ? 'appIcon' : 'hide' }/>
                             <p onClick={ this.openChangeFile.bind(this) } className={ this.state.appIcon ? "hide" : "addfile" }>+ Add Icon</p>
                             <input type="file" style={{display:"none"}} onChange={ this.changeFile.bind(this) } id="fileBox"/>
@@ -97,8 +97,8 @@ class General extends React.Component {
                     <div style={{width: '100%', height: 100, backgroundColor: '#F7F7F7'}}>
                         <div style={{width: '100%', height: '100%'}} className="flex-general-row-wrapper">
                         <div style={{width: '40%', height: '100%', padding: 35}}>
-                            <span style={{color: '#353446', fontSize: 16, fontWeight: 700, fontFamily: 'Signika'}}>App In Production</span>
-                            <span className="smallp" style={{fontFamily: 'Signika'}}>Is your app in production?</span>
+                            <span style={{color: '#353446', fontSize: 16, fontWeight: 700}}>App In Production</span>
+                            <span className="smallp">Is your app in production?</span>
                         </div>
                         <div className="solo-vertical-center" style={{width: '60%', height: '100%', backgroundColor: 'white', padding: 10}}>
                             <Toggle
