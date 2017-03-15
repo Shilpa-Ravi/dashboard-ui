@@ -164,10 +164,9 @@ class Upgrade extends React.Component {
                                                     <span className="cardname">{ card.name }</span>
                                                     <input type="text" className="cardcvv" placeholder="CVV" ref={ card.cardId }/>
                                                 </div>
-                                    }) :    <div style={{padding:68,textAlign:'center'}}>
-                                                <i className="fa fa-credit-card cardnotfound" aria-hidden="true"></i>
-                                                <p className="addacardmessage">Please add a card to make a payment.</p>
-                                            </div>
+                                    }) :    //<div style={{padding:68,textAlign:'center'}}>
+                                               this.state.addCardToggled = true
+                                            //</div>
                                 }
                             </div>
                             <div className={ this.state.addCardToggled || this.state.billingToggled || selectPlanisSame  ? 'hide' : 'buttons' }>
